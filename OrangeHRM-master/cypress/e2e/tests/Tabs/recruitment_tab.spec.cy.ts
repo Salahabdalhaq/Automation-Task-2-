@@ -27,7 +27,7 @@ describe("Recruitment: Candidates & Vacancies table data validation", () => {
     pimHelper
 
       .addEmployee(employeeData)
-      // Add a vacancy
+      // Add a acancy
       .then((employeeResponse) => {
         return cy.fixture("vacancyInfo").then((vacancyData) => {
           return vacanciesHelper.addVacancy(
